@@ -3,6 +3,8 @@
 
 ## 在我的CodePen上查看效果:
 
-* [170516-change text color animation](https://codepen.io/magicmai/full/pPOvYq/)
+* [170520-Bubble Background](https://codepen.io/magicmai/full/rmQdmx/)
 
-* [170503-Flexbox with cool hover effects](https://codepen.io/magicmai/full/vmQONG/)
+* [170516-Text Background](https://codepen.io/magicmai/full/pPOvYq/)
+
+* [170503-Flexbox Hover Effect](https://codepen.io/magicmai/full/vmQONG/)
