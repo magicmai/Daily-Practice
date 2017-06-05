@@ -1,4 +1,4 @@
-* [imooc-表单验证](http://www.imooc.com/learn/44)
+* 课程：[imooc-表单验证](http://www.imooc.com/learn/44)
 
 * 界面：
 
