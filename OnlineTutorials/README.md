@@ -8,3 +8,5 @@
 * [170516-Text Background](https://codepen.io/magicmai/full/pPOvYq/)
 
 * [170503-Flexbox Hover Effect](https://codepen.io/magicmai/full/vmQONG/)
+
+* [170531-Preloader](https://codepen.io/magicmai/pen/weGvKz?editors=1100)
