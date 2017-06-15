@@ -1,4 +1,4 @@
-任务名前的日期为制作教程的Youtuber更新的日期。
+练习名字前的日期为制作教程的Youtuber更新的日期。
 [Youtube地址](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/videos)
 
 ## 在我的CodePen上查看效果:
