@@ -1,5 +1,5 @@
-任务名前的日期为原Youtuber更新的日期。
-[原Youtuber地址](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/videos)
+任务名前的日期为制作教程的Youtuber更新的日期。
+[Youtube地址](https://www.youtube.com/channel/UCbwXnUipZsLfUckBPsC7Jog/videos)
 
 ## 在我的CodePen上查看效果:
 
