@@ -11,4 +11,7 @@
 
 * [170531 - preloader](https://codepen.io/magicmai/pen/weGvKz?editors=1100)
 
-* [170531 - Button Hover Effects](https://codepen.io/magicmai/pen/awmNPW)
+* [170613 - Button Hover Effects](https://codepen.io/magicmai/pen/awmNPW)
+
+* [170615 - CSS3 Button With Cool Hover Effects](https://codepen.io/magicmai/pen/awpXOM)
+
