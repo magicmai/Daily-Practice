@@ -16,3 +16,5 @@
 * [170615 - CSS3 Button With Cool Hover Effects](https://codepen.io/magicmai/pen/xrgMGe)
 
 * [170701 - Adding Stroke to Text](https://codepen.io/magicmai/pen/JJvGyB)
+
+* [170708 - Gradient Background Animation](https://codepen.io/magicmai/pen/MvazOK)
