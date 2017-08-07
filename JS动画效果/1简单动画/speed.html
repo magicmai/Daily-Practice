@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS速度动画</title>
+
+	<style>
+	body {
+		margin: 0;
+		padding: 0;
+	}
+	#div1 {
+		width: 200px;
+		height: 200px;
+		background: #f00;
+		position: absolute;
+		left: -200px;
+	}
+	#share {
+		text-align: center;
+		line-height: 25px;
+		width: 20px;
+		height: 50px;
+		background: #00f;
+		position: absolute;
+		left: 200px;
+		top: 75px;
+	}
+	</style>
+
+	<script>
+		var timer = null;
+		
+		// 1.较多的代码
+		/*
+		window.onload = function () {
+			var oDiv = document.getElementById('div1');
+			oDiv.onmouseover = function () {
+				startMove();
+			};
+			oDiv.onmouseout = function () {
+				startMove1();
+			};
+		};
+
+		function startMove() {
+			clearInterval(timer);
+			var oDiv = document.getElementById('div1');
+			timer = setInterval(function () {
+				if (oDiv.offsetLeft === 0) {
+					clearInterval(timer);
+				} 
+				else {
+					oDiv.style.left = oDiv.offsetLeft + 10 + 'px';
+				}
+			}, 30);
+		}
+
+		function startMove1() {
+			clearInterval(timer);
+			var oDiv = document.getElementById('div1');
+			timer = setInterval(function () {
+				if (oDiv.offsetLeft === -200) {
+					clearInterval(timer);
+				} 
+				else {
+					oDiv.style.left = oDiv.offsetLeft - 10 + 'px';
+				}
+			}, 30);
+		}
+		 */
+
+		// 2.较少的代码
+		/*
+		window.onload = function () {
+			var oDiv = document.getElementById('div1');
+			oDiv.onmouseover = function () {
+				startMove(10, 0);
+			};
+			oDiv.onmouseout = function () {
+				startMove(-10, -200);
+			};
+		};
+
+		var timer = null;
+		function startMove(speed, iTarget) {
+			clearInterval(timer);
+			var oDiv = document.getElementById('div1');
+			timer = setInterval(function () {
+				if (oDiv.offsetLeft === iTarget) {
+					clearInterval(timer);
+				} 
+				else {
+					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+				}
+			}, 30);
+		}
+		 */
+
+		// 3.精简传入参数(一个)
+		window.onload = function () {
+			var oDiv = document.getElementById('div1');
+			oDiv.onmouseover = function () {
+				startMove(0);
+			};
+			oDiv.onmouseout = function () {
+				startMove(-200);
+			};
+		};
+
+		var timer = null;
+		function startMove(iTarget) {
+			clearInterval(timer);
+			var oDiv = document.getElementById('div1');
+			timer = setInterval(function () {
+
+				var speed = 0;
+				if (oDiv.offsetLeft < iTarget) {
+					speed = 10;
+				}
+				else {
+					speed = -10;
+				}
+
+				if (oDiv.offsetLeft === iTarget) {
+					clearInterval(timer);
+				} 
+				else {
+					oDiv.style.left = oDiv.offsetLeft + speed + 'px';
+				}
+			}, 30);
+		}
+	</script>
+</head>
+
+<body>
+	<div id="div1">
+		<span id="share">分享</span>
+	</div>
+</body>
+</html>
