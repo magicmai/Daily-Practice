@@ -52,14 +52,14 @@
 			clearInterval(obj.timer);
 
 			obj.timer = setInterval(function () {
-				var icur = parseInt(getStyle(obj, attr));
-				var speed = (iTarget - icur) / 8;
+				var iCur = parseInt(getStyle(obj, attr));
+				var speed = (iTarget - iCur) / 8;
 				speed = speed > 0? Math.ceil(speed) : Math.floor(speed);
-				if (icur === iTarget) {
+				if (iCur === iTarget) {
 					clearInterval(obj.timer);
 				}
 				else {	
-					obj.style[attr] = icur + speed + 'px';
+					obj.style[attr] = iCur + speed + 'px';
 				}
 			}, 30);
 		}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>5.同时运动</title>
+	<style>
+		body, 
+		ul, 
+		li {
+			margin: 0;
+			padding: 0;
+		}
+		ul, 
+		li {
+			list-style-type: none;
+		}
+		ul li {
+			width: 200px;
+			height: 100px;
+			background: yellow;
+			margin-bottom: 20px;
+			border: 4px solid #000;
+			filter: alpha(opacity: 30);
+			opacity: 0.3;
+		}
+	</style>
+	<script src="move.js"></script>
+	<script>
+		window.onload = function () {
+			var oLi = document.getElementById('li1');
+			oLi.onmouseover = function () {
+				startMove(oLi, {width: 210, height: 200, opacity: 100}, function () {
+					console.log('finish!');
+				});
+			}
+			oLi.onmouseout = function () {
+				startMove(oLi, {width: 200, height: 100, opacity: 30}, function () {
+					console.log('finish!');
+				});
+			}
+		}	
+	</script>
+</head>
+<body>
+	<ul>
+		<li id="li1"></li>
+	</ul>
+	<p>问题：
+		当把width改成较小，如：201时，height和opacity并没有达到设置的200和100就停下了。<br>原因：js检测停止代码中，没有判断在所有运动达到目标值后再清除定时器。
+	</p>
+</body>
+</html>

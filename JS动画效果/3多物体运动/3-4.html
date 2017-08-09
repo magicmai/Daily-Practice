@@ -39,18 +39,18 @@
 			clearInterval(obj.timer);
 
 			obj.timer = setInterval(function () {
-				var icur = parseInt(getStyle(obj, 'width'));
-				var speed = (iTarget - icur) / 8;
+				var iCur = parseInt(getStyle(obj, 'width'));
+				var speed = (iTarget - iCur) / 8;
 				speed = speed > 0? Math.ceil(speed) : Math.floor(speed);
 				console.log('obj.offsetWidth: ', obj.offsetWidth);
 				console.log('speed: ', speed);
-				if (icur === iTarget) {
+				if (iCur === iTarget) {
 					clearInterval(obj.timer);
 				}
 				else {
-					//obj.style.width = icur + speed + 'px';
+					//obj.style.width = iCur + speed + 'px';
 					//
-					obj.style['width'] = icur + speed + 'px';
+					obj.style['width'] = iCur + speed + 'px';
 				}
 			}, 30);
 		}

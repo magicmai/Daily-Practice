@@ -49,26 +49,26 @@
 			clearInterval(obj.timer);
 
 			obj.timer = setInterval(function () {
-				var icur = 0;
+				var iCur = 0;
 				if (attr === 'opacity') {
-					icur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
+					iCur = Math.round(parseFloat(getStyle(obj, attr)) * 100);
 				}
 				else {
-					icur = parseInt(getStyle(obj, attr));
+					iCur = parseInt(getStyle(obj, attr));
 				}
-				console.log('icur: ', icur);
-				var speed = (iTarget - icur) / 8;
+				console.log('iCur: ', iCur);
+				var speed = (iTarget - iCur) / 8;
 				speed = speed > 0? Math.ceil(speed) : Math.floor(speed);
-				if (icur === iTarget) {
+				if (iCur === iTarget) {
 					clearInterval(obj.timer);
 				}
 				else {	
 					if (attr == 'opacity') {
-						obj.style.filter = 'alpha(opacity:' + (icur + speed) + ')';
-						obj.style.opacity = (icur + speed) / 100;
+						obj.style.filter = 'alpha(opacity:' + (iCur + speed) + ')';
+						obj.style.opacity = (iCur + speed) / 100;
 					}
 					else {
-						obj.style[attr] = icur + speed + 'px';
+						obj.style[attr] = iCur + speed + 'px';
 					}
 				}
 			}, 80);
