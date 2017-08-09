@@ -1,4 +1,5 @@
 # JS动画效果
+[学习地址](http://www.imooc.com/learn/167)
 
 运动框架的实现思路：
 
@@ -16,6 +17,4 @@
 
 ----
 2017.8.7
-
-[学习地址](http://www.imooc.com/learn/167)
 
