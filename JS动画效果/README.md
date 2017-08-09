@@ -1,7 +1,8 @@
 # JS动画效果
 
- > 学习地址：[JS动画效果](http://www.imooc.com/learn/167)
- 学习时间：2017.8.7
+ > 学习时间：2017.8.7 
+ 学习地址：[JS动画效果](http://www.imooc.com/learn/167)
+ 
 
 
 **学习笔记：**
