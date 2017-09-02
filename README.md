@@ -10,8 +10,10 @@
 
 - [x] Ajax 异步加载页面内容（Ajax 全接触）
 
-- [x] CSS3 动画（online tutorial）
+- [x] CSS3 应用（online tutorial）
 
 - [x] 表单验证
 
-- [x] 简单算法（《写给大家看的算法书》总结）
+- [x] JS 动画效果
+
+- [x] DOM事件揭秘
