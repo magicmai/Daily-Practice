@@ -57,7 +57,7 @@
 ```
 
 ----
-课程：[网页定位导航特效](http://www.imooc.com/learn/56)
+课程：[网页定位导航特效](http://www.imooc.com/u/4228249/course/56/codes)
 
 
 
